@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Header */
+
+.header-wrapper .header--middle-left {
+  grid-template-columns: auto 1fr auto;
+}
+.header-wrapper .header--middle-left .header__inline-menu {
+  @apply mx-auto;
+}
+
+.header-wrapper .header--middle-left .header__menu-item span {
+  @apply text-[16px] leading-[24px] font-[600] text-[#2D3830];
+}
+
+.header-wrapper .header--middle-left .header__icon .icon {
+  @apply w-[24px] h-[24px] min-w-[24px];
+}
+
+.header-wrapper .header--middle-left .header__icon {
+  @apply w-[50px];
+}
+.header__icon--cart {
+  @apply m-0;
+}
+
+.main-btn {
+  @apply min-h-[80px] xl:min-h-[100px] bg-[#C62903] font-[800] text-[#E0E0D6] text-[16px] md:text-[20px] leading-[16px] md:leading-[20px] uppercase rounded-tl-[25px] rounded-br-[25px] flex items-center justify-center text-center max-w-[165px] w-full px-[20px];
+  font-family: var(--font-heading-family);
+}
+
+.header-wrapper .main-btn {
+  @apply hidden sm:flex ml-[10px] xl:ml-[20px];
+}
+
+.header-wrapper .header--middle-left .header__icons {
+  @apply hidden sm:flex items-center;
+}
+
+.header-wrapper .header--middle-left {
+  @apply max-w-[1887px];
+  @apply px-[10px] !important;
+}
+.header-wrapper .header--middle-left summary.list-menu__item {
+  @apply px-[25px];
+}
+
+.header-wrapper .header--middle-left .list-menu__item {
+  @apply px-[10px] xl:px-[15px];
+}
+
+.header-wrapper .header--middle-left .header__heading-logo {
+  @apply max-w-[177px] lg:max-w-[200px] xl:max-w-full;
+}
+@media (max-width: 640px) {
+  .header-wrapper .header.header--middle-left {
+    grid-template-areas: "heading left-icons icons";
+  }
+  .header-wrapper .header--middle-left header-drawer {
+    justify-self: flex-end;
+  }
+  .header-wrapper .header--middle-left {
+    @apply px-[2px] !important;
+  }
+  .header-wrapper .header--middle-left {
+    @apply pt-[2px] pb-[3px];
+  }
+}
