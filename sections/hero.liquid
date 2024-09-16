@@ -1,0 +1,124 @@
+
+<script src="{{ 'hero-slider.js' | asset_url }}" defer="defer"></script>
+
+<div class="hero">
+    <div class="hero-wrapper">
+        <div class="keen-slider">
+        {%- for block in section.blocks -%}
+            {%- case block.type -%}
+       
+              {%- when 'Slide' -%}
+                <div class="keen-slider__slide">
+                    <div class="hero-slide">
+                    <div class="left-section" style="background-color: {{ block.settings.background-color }};">
+                        <div class="shape-wrapper">
+                            <img
+                            src="{{ 'hero-shape.png' | asset_url }}"
+                            width="543"
+                            height="249"
+                            loading="lazy"
+                          >
+                        </div>
+                        {% if block.settings.content != blank %}
+                            <div class="content">{{ block.settings.content }}</div>
+                        {% endif %}
+                        {% if block.settings.button-title != blank %}
+                            <a class="arrow-btn" href="{{ block.settings[button-link] }}">{{ block.settings.button-title }}</a>
+                        {% endif %}
+                    </div>
+                    <div class="right-section">
+                        {% if block.settings.image != blank %}
+                        <img
+                        src="{{ block.settings.image | image_url: width: 1223 }}"
+                        width="1223"
+                        height="910"
+                        loading="lazy"
+                      >
+                        {% endif %}
+                        
+                    </div>
+                    </div>
+                </div>
+                
+            {% endcase %}
+        {% endfor %}
+
+        <div class="dots">
+                        
+        </div>
+       <div class="slider-btns">
+            <button class="prev">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 18H6M6 18L15 27M6 18L15 9" stroke="#E0E0D6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    
+            </button>
+            <button class="next">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 18H30M30 18L21 9M30 18L21 27" stroke="#E0E0D6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+                    
+            </button>
+        </div> 
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+      "name": "Hero",
+      "tag": "section",
+      "class": "section",
+      "disabled_on": {
+        "groups": ["header", "footer"]
+      },
+      "settings": [
+      ],
+      "blocks": [
+        {
+          "type": "Slide",
+          "name": "Slide",
+          "settings": [
+            {
+                "type": "color",
+                "id":"background-color",
+                "label":"Background Color",
+                "default": "#C62903"
+            },
+            {
+              "type": "richtext",
+              "id": "content",
+              "label": "Content"
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "button-title",
+              "label": "Button Title"
+            },
+            {
+              "type": "url",
+              "id": "button-link",
+              "label": "Button Link"
+            }
+            
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Hero",
+          "blocks": [
+           
+          ]
+        }
+      ]
+    }
+    {% endschema %}
+    

@@ -1,5 +1,47 @@
 {
   "sections": {
+    "hero_KkkKag": {
+      "type": "hero",
+      "blocks": {
+        "slide_xC6kXq": {
+          "type": "Slide",
+          "settings": {
+            "background-color": "#c62903",
+            "content": "<h1>HOWLIN’ WOLF Live in Europe<\/h1><p>Exclusive for Record Store <br\/>Day - pressed on smoke effect vinyl.<\/p>",
+            "image": "shopify:\/\/shop_images\/Rectangle_3_1_2.png",
+            "button-title": "Shop Now",
+            "button-link": ""
+          }
+        },
+        "slide_zEMw3t": {
+          "type": "Slide",
+          "settings": {
+            "background-color": "#486171",
+            "content": "<h1>Become a club member<\/h1><p>Vinyl Club: Starting at $30 \/ Month<\/p><p>CD Club: Starting at $10 \/ Month<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_66.png",
+            "button-title": "Explore options",
+            "button-link": ""
+          }
+        },
+        "slide_AhEUYb": {
+          "type": "Slide",
+          "settings": {
+            "background-color": "#2d3830",
+            "content": "<h4>Featured<\/h4><h1>Couldn’t Stand the Weather<\/h1><p>Stevie ray vaughan and double touble<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_67.png",
+            "button-title": "Shop Now",
+            "button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_xC6kXq",
+        "slide_zEMw3t",
+        "slide_AhEUYb"
+      ],
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -69,6 +111,7 @@
     }
   },
   "order": [
+    "hero_KkkKag",
     "image_banner",
     "featured_collection"
   ]
