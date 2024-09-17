@@ -1,0 +1,108 @@
+<div class="subscription-plans">
+    {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+            {%- case block.type -%}
+                {%- when 'card' -%}
+                    <div class="subscription-card" style="background-color: {{ block.settings.background-color }};">
+                        {% if block.settings.shape != blank %}
+                            <div class="shape-wrapper">
+                                <img
+                                src="{{ block.settings.shape | image_url: width: 564 }}"
+                                width="564"
+                                height="227"
+                                loading="lazy"
+                              >
+                            </div>
+                           
+                        {% endif %}
+                      
+                        {% if block.settings.image != blank %}
+                            <div class="image-wrapper">
+                                <img
+                                src="{{ block.settings.image | image_url: width: block.settings.image.width }}"
+                                width="{{ block.settings.image.width }}"
+                                height="{{ block.settings.image.height }}"
+                                loading="lazy"
+                              >
+                            </div>
+                           
+                        {% endif %}
+                        <div class="content-wrapper">
+                        {% if block.settings.content != blank %}
+                            <div class="content">{{ block.settings.content }}</div>
+                        {% endif %}
+
+                        {% if block.settings.button-title != blank %}
+                            <a class="arrow-btn" href="{{ block.settings[button-link] }}">{{ block.settings.button-title }}</a>
+                        {% endif %}
+                        </div>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+    {% endif %}
+</div>
+
+
+{% schema %}
+    {
+      "name": "Subscription Plans",
+      "tag": "section",
+      "class": "section",
+      "disabled_on": {
+        "groups": ["header", "footer"]
+      },
+      "settings": [
+        
+            
+      ],
+      "blocks": [
+        {
+          "type": "card",
+          "name": "Card",
+          "limit":2,
+          "settings": [
+            {
+                "type": "color",
+                "id":"background-color",
+                "label":"Background Color",
+                "default": "#C62903"
+            },
+            {
+              "type": "richtext",
+              "id": "content",
+              "label": "Content"
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "image_picker",
+              "id": "shape",
+              "label": "Shape"
+            },
+            {
+              "type": "text",
+              "id": "button-title",
+              "label": "Button Title"
+            },
+            {
+              "type": "url",
+              "id": "button-link",
+              "label": "Button Link"
+            }
+            
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Subscription Plans",
+          "blocks": [
+           
+          ]
+        }
+      ]
+    }
+    {% endschema %}

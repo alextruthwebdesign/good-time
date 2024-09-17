@@ -103,6 +103,39 @@
         "mobile_image": "shopify:\/\/shop_images\/Rectangle_14_2_1.png"
       }
     },
+    "subscription_plans_LJtPQG": {
+      "type": "subscription-plans",
+      "blocks": {
+        "card_AA8GWF": {
+          "type": "card",
+          "settings": {
+            "background-color": "#486171",
+            "content": "<h2>Vintage<br\/>Record<br\/>Club - VINYL<\/h2><p>Starting at $30 \/ Month<\/p>",
+            "image": "shopify:\/\/shop_images\/Vinyl-4_1_1.png",
+            "shape": "shopify:\/\/shop_images\/distress_top_1.png",
+            "button-title": "explore options",
+            "button-link": ""
+          }
+        },
+        "card_CqfXDr": {
+          "type": "card",
+          "settings": {
+            "background-color": "#c62903",
+            "content": "<h2>Vintage <br\/>Record <br\/>Club - CD<\/h2><p>Starting at $10 \/ Month<\/p>",
+            "image": "shopify:\/\/shop_images\/Vinyl-4_4.png",
+            "shape": "shopify:\/\/shop_images\/distress_top_2.png",
+            "button-title": "explore options",
+            "button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_AA8GWF",
+        "card_CqfXDr"
+      ],
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -147,6 +180,7 @@
     "hero_KkkKag",
     "products_slider_BkV3t8",
     "text_banner_BJ6w6j",
+    "subscription_plans_LJtPQG",
     "image_banner"
   ]
 }

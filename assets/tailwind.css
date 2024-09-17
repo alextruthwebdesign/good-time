@@ -328,3 +328,36 @@ body {
     @apply max-w-[280px];
   }
 }
+
+/* Subscription plans */
+
+.subscription-plans {
+  @apply flex flex-col md:flex-row;
+}
+
+.subscription-plans .subscription-card {
+  @apply md:w-[50%]  overflow-hidden relative flex flex-col justify-center py-[67px] md:py-[80px] lg:py-[100px] xl:py-[114px] px-[30px] md:px-[40px] lg:px-[80px] xl:px-[100px] 2xl:px-[140px];
+}
+.subscription-plans .shape-wrapper {
+  @apply absolute left-0 top-0 max-w-[139px] sm:max-w-[227px];
+}
+.subscription-plans .shape-wrapper img {
+  @apply w-full;
+}
+
+.subscription-plans .image-wrapper {
+  @apply absolute right-[0px] top-[50%] translate-y-[-50%] z-[0] max-w-[282px];
+}
+
+.subscription-plans h2 {
+  @apply text-[40px] xl:text-[64px] leading-[40px] xl:leading-[64px] font-[800] text-[#E0E0D6] uppercase mb-[8px] sm:mb-[23px];
+  letter-spacing: 0px;
+}
+
+.subscription-plans p {
+  @apply text-[16px] sm:text-[20px] leading-[19.2px] sm:leading-[24px] font-[500] text-[#E0E0D6] mb-[37px] sm:mb-[55px];
+  letter-spacing: 0px;
+}
+.subscription-plans .content-wrapper {
+  @apply relative z-[1];
+}
