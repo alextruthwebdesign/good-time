@@ -42,6 +42,59 @@
       "settings": {
       }
     },
+    "products_slider_BkV3t8": {
+      "type": "products-slider",
+      "blocks": {
+        "tag_CqjRF4": {
+          "type": "tag",
+          "settings": {
+            "button-title": "New Arrivals",
+            "button-link": ""
+          }
+        },
+        "tag_3qqL8H": {
+          "type": "tag",
+          "settings": {
+            "button-title": "Most Popular",
+            "button-link": ""
+          }
+        },
+        "tag_Q9ztx7": {
+          "type": "tag",
+          "settings": {
+            "button-title": "Best Sellers",
+            "button-link": ""
+          }
+        },
+        "tag_jaPRyN": {
+          "type": "tag",
+          "settings": {
+            "button-title": "Anthology",
+            "button-link": ""
+          }
+        },
+        "tag_Y6R389": {
+          "type": "tag",
+          "settings": {
+            "button-title": "Soundtracks",
+            "button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "tag_CqjRF4",
+        "tag_3qqL8H",
+        "tag_Q9ztx7",
+        "tag_jaPRyN",
+        "tag_Y6R389"
+      ],
+      "settings": {
+        "heading": "Search the catalog",
+        "button-title": "Shop Now",
+        "button-link": "",
+        "collection": "frontpage"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -112,6 +165,7 @@
   },
   "order": [
     "hero_KkkKag",
+    "products_slider_BkV3t8",
     "image_banner",
     "featured_collection"
   ]

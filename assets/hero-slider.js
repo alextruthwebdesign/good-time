@@ -41,19 +41,19 @@ heroSliders?.forEach((item) => {
           dots.appendChild(dot);
         });
 
-        // slider.container.addEventListener("mouseover", () => {
-        //   mouseOver = true;
-        //   clearNextTimeout();
-        // });
-        // slider.container.addEventListener("mouseout", () => {
-        //   mouseOver = false;
-        //   nextTimeout();
-        // });
-        // nextTimeout();
+        slider.container.addEventListener("mouseover", () => {
+          mouseOver = true;
+          clearNextTimeout();
+        });
+        slider.container.addEventListener("mouseout", () => {
+          mouseOver = false;
+          nextTimeout();
+        });
+        nextTimeout();
       });
-      //   slider.on("dragStarted", clearNextTimeout);
-      //   slider.on("animationEnded", nextTimeout);
-      //   slider.on("updated", nextTimeout);
+      slider.on("dragStarted", clearNextTimeout);
+      slider.on("animationEnded", nextTimeout);
+      slider.on("updated", nextTimeout);
     },
   ]);
   nextBtn?.addEventListener("click", function () {

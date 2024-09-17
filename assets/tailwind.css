@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-[#E0E0D6] !important;
+}
+
 /* Header */
 
 .header-wrapper .header--middle-left {
@@ -87,10 +91,18 @@
   font-family: var(--font-heading-family);
 }
 
+.arrow-btn.red-variant {
+  @apply text-[#C62903];
+}
+
 .arrow-btn::after {
   @apply ml-[8px];
   vertical-align: middle;
   content: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 25.5L25.5 10.5M25.5 10.5H10.5M25.5 10.5V25.5' stroke='%23E0E0D6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.arrow-btn.red-variant::after {
+  content: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M10.5%2025.5L25.5%2010.5M25.5%2010.5H10.5M25.5%2010.5V25.5%22%20stroke%3D%22%23C62903%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
 .hero .hero-slide {
@@ -172,6 +184,9 @@
   .arrow-btn::after {
     content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 17L17 7M17 7H7M17 7V17' stroke='%23E0E0D6' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   }
+  .arrow-btn.red-variant::after {
+    content: url("data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M7%2017L17%207M17%207H7M17%207V17%22%20stroke%3D%22%23C62903%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  }
   .hero .hero-slide .content {
     @apply mb-[47px];
   }
@@ -187,4 +202,79 @@
   .hero .dots {
     @apply bottom-[30px] left-[50%] translate-x-[-50%];
   }
+}
+
+/* Products Slider */
+.products-slider {
+  @apply pt-[77px] xl:pt-[120px] xl:pt-[152px] px-[10px] overflow-hidden;
+}
+.products-slider h2 {
+  @apply text-[48px] sm:text-[54px] lg:text-[70px] xl:text-[96px] leading-[43.2px] sm:leading-[54px] lg:leading-[70px] xl:leading-[96px] text-[#2D3830] font-[800];
+}
+.products-slider .arrow-btn {
+  @apply mb-[10px];
+}
+.products-slider .top-content {
+  @apply max-w-[1645px] mx-auto mb-[25px] sm:mb-[40px];
+}
+.products-slider .heading {
+  @apply flex flex-col sm:flex-row gap-x-[10px] gap-y-[24px] justify-between sm:items-end mb-[18px] sm:mb-[25px];
+}
+.products-slider .arrow-btn {
+  @apply whitespace-nowrap;
+}
+.products-slider .tags {
+  @apply overflow-hidden flex;
+  touch-action: none;
+  user-select: none;
+}
+.products-slider .tag-btn {
+  @apply whitespace-nowrap border-transparent border-[1px] rounded-full text-[14px] sm:text-[16px] leading-[21px] sm:leading-[24px] font-[600] text-[#C62903] px-[26px] py-[9px] inline-block;
+}
+.products-slider .tag-btn.active {
+  @apply border-[#C62903];
+}
+
+.products-slider .image-wrapper {
+  @apply relative pt-[80%] sm:pt-[73%] mb-[3px] sm:mb-[18px];
+}
+
+.products-slider .image-wrapper svg {
+  @apply absolute top-[15px] sm:top-[19px] right-[19px] sm:right-[26px];
+}
+.products-slider .image-wrapper img {
+  @apply w-full h-full absolute top-0 left-0 object-cover;
+}
+
+.products-slider h3 {
+  @apply text-[24px] lg:text-[28px] leading-[24px] lg:leading-[28px] font-[800] text-[#2D3830] mb-[5px];
+}
+.products-slider p {
+  @apply text-[16px] leading-[24px] font-[600] text-[#2D3830] mb-[10px];
+}
+.products-slider .price {
+  @apply text-[28px] lg:text-[32px] leading-[28px] lg:leading-[32px] font-[800] text-[#2D3830] inline-block mb-[17px] sm:mb-[14px];
+  font-family: var(--font-heading-family);
+}
+
+.products-slider .products-slider-wrapper button span {
+  @apply text-[16px] leading-[16px] font-[800] text-[#E0E0D6] uppercase;
+  font-family: var(--font-heading-family);
+}
+.products-slider .products-slider-wrapper button::before,
+.products-slider .products-slider-wrapper button::after {
+  @apply hidden;
+}
+.products-slider .products-slider-wrapper button {
+  @apply bg-[#C62903] opacity-100 rounded-full min-h-[43px] w-auto px-[25px];
+}
+.products-slider .products-slider-wrapper .content {
+  @apply px-[8px] sm:px-[17px];
+}
+.products-slider .collection-slider {
+  @apply max-w-[1675px] mx-auto;
+}
+.products-slider .collection-slider .keen-slider {
+  @apply ml-[-10px] sm:ml-0;
+  overflow: visible !important;
 }
