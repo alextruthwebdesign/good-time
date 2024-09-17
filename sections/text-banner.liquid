@@ -1,0 +1,75 @@
+<div class="text-banner">
+    <div class="text-banner-wrapper">
+        <div class="shape-wrapper">
+            <img
+            src="{{ 'text-banner-shape.png' | asset_url }}"
+            width="543"
+            height="249"
+            loading="lazy"
+          >                                      
+            </div>
+        {% if section.settings.heading != blank %}
+            <h2>{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.desktop_image != blank %}
+            <img
+            class="desktop-image"
+            src="{{ section.settings.desktop_image | image_url: width: 1920 }}"
+            width="1920"
+            height="663"
+            loading="lazy"
+        >
+        {% endif %}
+        {% if section.settings.mobile_image != blank %}
+            <img
+            class="mobile-image"
+            src="{{ section.settings.mobile_image | image_url: width: 334 }}"
+            width="334"
+            height="156"
+            loading="lazy"
+        >
+        {% endif %}
+    </div>
+</div>
+
+
+{% schema %}
+    {
+      "name": "Text Banner",
+      "tag": "section",
+      "class": "section",
+      "disabled_on": {
+        "groups": ["header", "footer"]
+      },
+      "settings": [
+        {
+                "type": "inline_richtext",
+                "id":"heading",
+                "label":"Heading"
+            },
+
+           {
+                "type": "image_picker",
+                "id":"desktop_image",
+                "label":"Desktop Image"
+            },
+            {
+                "type": "image_picker",
+                "id":"mobile_image",
+                "label":"Mobile Image"
+            }
+            
+      ],
+      "blocks": [
+        
+      ],
+      "presets": [
+        {
+          "name": "Text Banner",
+          "blocks": [
+           
+          ]
+        }
+      ]
+    }
+    {% endschema %}
