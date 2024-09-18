@@ -1,0 +1,198 @@
+<script src="{{ 'discover-slider.js' | asset_url }}" defer="defer"></script>
+
+<div class="discover-section">
+    <div class="discover-wrapper">
+        <div class="heading">
+            {% if section.settings.heading != blank %}
+                <h2>{{ section.settings.heading }}</h2>
+            {% endif %}
+            {% if section.settings.button-text != blank %}
+                <a href="{{ section.settings.button-link }}" class="arrow-btn red-variant">{{ section.settings.button-text }}</a>
+            {% endif %}
+        </div>
+        <div class="discover-card">
+            
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+        
+                {%- when 'card' -%}
+                    <div class="shape-wrapper top">
+                            <img
+                            src="{{ 'discover-top.png' | asset_url }}"
+                            width="527"
+                            height="175"
+                            loading="lazy"
+                          >
+                        </div>
+                        <div class="shape-wrapper left">
+                            <img
+                            src="{{ 'discover-left.png' | asset_url }}"
+                            width="435"
+                            height="171"
+                            loading="lazy"
+                          >
+                        </div>
+                    <div class="card-wrapper">
+                        <div class="left-section">
+                            {% if block.settings.subtitle != blank %}
+                                <h4>{{ block.settings.subtitle }}</h4>
+                            {% endif %}
+                            {% if block.settings.title != blank %}
+                                <h3>{{ block.settings.title }}</h3>
+                            {% endif %}
+                            {% if block.settings.description != blank %}
+                                <p>{{ block.settings.description }}</p>
+                            {% endif %}
+                            {% if block.settings.button-text != blank %}
+                                <a href="{{ block.settings.button-link }}" class="arrow-btn">{{ block.settings.button-text }}</a>
+                            {% endif %}
+                        </div>
+                        <div class="image-wrapper">
+                            {% if block.settings.image != blank %}
+                                <img
+                                src="{{ block.settings.image | image_url: width: 1244 }}"
+                                width="1244"
+                                height="849"
+                                loading="lazy"
+                              >
+                                {% endif %}
+                        </div>
+                    </div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+        <div class="keen-slider">
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+        
+                {%- when 'slide' -%}
+                    <div class="keen-slider__slide">
+                        <div class="card-section">
+                            <div class="image-card">
+                                {% if block.settings.image != blank %}
+                                    <img
+                                    src="{{ block.settings.image | image_url: width: 387}}"
+                                    width="387"
+                                    height="302"
+                                    loading="lazy"
+                                >
+                                    {% endif %}
+                                    </div>
+                                {% if block.settings.title != blank %}
+                                    <h4>{{ block.settings.title }}</h4>
+                                {% endif %}
+                                {% if block.settings.subtitle != blank %}
+                                    <p>{{ block.settings.subtitle }}</p>
+                                {% endif %}
+                        
+                        </div>
+                    </div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+    {
+      "name": "Discover Section",
+      "tag": "section",
+      "class": "section",
+      "disabled_on": {
+        "groups": ["header", "footer"]
+      },
+      "settings": [
+        {
+                "type": "text",
+                "id":"heading",
+                "label":"Heading"
+             
+            },
+            {
+              "type": "text",
+              "id": "button-text",
+              "label": "Button Text"
+            },
+            {
+              "type": "url",
+              "id": "button-link",
+              "label": "Button Link"
+            }
+      ],
+      "blocks": [
+        {
+          "type": "slide",
+          "name": "Slide",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            },
+            {
+              "type": "text",
+              "id": "subtitle",
+              "label": "Subtitle"
+            }
+            
+          ]
+        },
+        {
+          "type": "card",
+          "name": "Card",
+          "limit":1,
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            },
+            {
+              "type": "inline_richtext",
+              "id": "description",
+              "label": "Description"
+            },
+            {
+              "type": "text",
+              "id": "button-text",
+              "label": "Button Text"
+            },
+            {
+              "type": "url",
+              "id": "button-link",
+              "label": "Button Link"
+            }
+            
+          ]
+        }
+        
+    
+    
+      ],
+      "presets": [
+        {
+          "name": "Discover Section",
+          "blocks": [
+           
+          ]
+        }
+      ]
+    }
+    {% endschema %}

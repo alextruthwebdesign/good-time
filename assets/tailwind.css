@@ -364,7 +364,7 @@ body {
 
 /* Sliders Section */
 .sliders-section {
-  @apply pt-[75px] lg:pt-[120px] xl:pt-[150px] overflow-hidden;
+  @apply pt-[75px] lg:pt-[120px] xl:pt-[150px] pb-[80px] lg:pb-[120px] xl:pb-[170px] overflow-hidden;
 }
 .sliders-section h2 {
   @apply mb-[25px] text-[48px] sm:text-[54px] lg:text-[70px] xl:text-[96px] leading-[43.2px] sm:leading-[54px] lg:leading-[70px] xl:leading-[96px] text-[#2D3830] font-[800];
@@ -405,5 +405,78 @@ body {
 }
 .sliders-section .slider-container .keen-slider {
   @apply ml-[-60px];
+  overflow: visible !important;
+}
+
+/* Discover Section */
+.discover-section {
+  @apply sm:px-[10px] overflow-hidden;
+}
+.discover-section .discover-wrapper {
+  @apply max-w-[1645px] mx-auto;
+}
+.discover-section h2 {
+  @apply text-[48px] sm:text-[54px] lg:text-[70px] xl:text-[96px] leading-[43.2px] sm:leading-[54px] lg:leading-[70px] xl:leading-[96px] text-[#2D3830] font-[800];
+}
+
+.discover-section .heading {
+  @apply flex px-[10px] sm:px-0 flex-col sm:flex-row gap-x-[10px] gap-y-[24px] justify-between sm:items-end mb-[16px] sm:mb-[45px];
+}
+.discover-section .heading a {
+  @apply mb-[10px];
+}
+.discover-section .discover-card {
+  @apply relative overflow-hidden px-[30px] lg:px-[50px] bg-[#486171] rounded-tl-[60px] lg:rounded-tl-[100px] rounded-br-[50px] lg:rounded-br-[100px] mb-[21px] sm:mb-[60px];
+}
+.discover-section .shape-wrapper {
+  @apply absolute  pointer-events-none;
+}
+.discover-section .shape-wrapper img {
+  @apply w-full;
+}
+.discover-section .shape-wrapper.top {
+  @apply top-0 right-0 max-w-[326px] sm:max-w-[527px];
+}
+.discover-section .shape-wrapper.left {
+  @apply bottom-0 sm:bottom-auto sm:top-[134px] left-0 max-w-[124px] sm:max-w-[175px];
+}
+.discover-section .discover-card .card-wrapper {
+  @apply flex gap-x-[10px] gap-y-[32px] flex-col lg:flex-row lg:items-center justify-between lg:px-[3vw] xl:px-[4.7vw] pb-[59px] lg:pb-[3.8vw] pt-[42px] lg:pt-[3.9vw];
+}
+
+.discover-section .discover-card h4 {
+  @apply mb-[9px] lg:mb-[15px] text-[20px] lg:text-[28px] leading-[28px] lg:leading-[39.2px] font-[800] text-[#2D3830];
+  letter-spacing: 0px;
+}
+
+.discover-section .discover-card h3 {
+  @apply text-[40px] xl:text-[64px] leading-[40px] xl:leading-[64px] font-[800] text-[#E0E0D6] uppercase mb-[19px] lg:mb-[84px];
+  letter-spacing: 0px;
+}
+.discover-section .discover-card p {
+  @apply text-[16px] sm:text-[20px] leading-[19.2px] sm:leading-[30px] font-[600] text-[#E0E0D6] mb-[38px] lg:mb-[52px];
+}
+.discover-section .image-wrapper {
+  @apply max-w-[622px] 2xl:mr-[3vw];
+}
+.discover-section .left-section {
+  @apply lg:min-w-[380px] lg:max-w-[527px];
+}
+
+.discover-section .card-section h4 {
+  @apply mb-[5px] sm:mb-0 text-[24px] lg:text-[28px] leading-[24px] lg:leading-[39.2px] font-[800] text-[#2D3830];
+  letter-spacing: 0px;
+}
+.discover-section .card-section p {
+  @apply text-[16px] leading-[24px] font-[600] text-[#2D3830];
+}
+.discover-section .card-section .image-card {
+  @apply overflow-hidden relative pt-[73%] sm:pt-[75%] mb-[10px];
+}
+.discover-section .card-section img {
+  @apply mx-[-15px] absolute w-full h-full top-0 left-0 object-cover;
+}
+.discover-section .keen-slider {
+  @apply px-[10px] sm:px-0;
   overflow: visible !important;
 }

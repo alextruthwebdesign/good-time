@@ -1725,17 +1725,20 @@ body {
 .sliders-section {
   overflow: hidden;
   padding-top: 75px;
+  padding-bottom: 80px;
 }
 
 @media (min-width: 1024px) {
   .sliders-section {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
 @media (min-width: 1280px) {
   .sliders-section {
     padding-top: 150px;
+    padding-bottom: 170px;
   }
 }
 
@@ -1844,5 +1847,332 @@ body {
 
 .sliders-section .slider-container .keen-slider {
   margin-left: -60px;
+  overflow: visible !important;
+}
+
+/* Discover Section */
+
+.discover-section {
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .discover-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.discover-section .discover-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1645px;
+}
+
+.discover-section h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 43.2px;
+  --tw-text-opacity: 1;
+  color: rgb(45 56 48 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .discover-section h2 {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-section h2 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .discover-section h2 {
+    font-size: 96px;
+    line-height: 96px;
+  }
+}
+
+.discover-section .heading {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 640px) {
+  .discover-section .heading {
+    margin-bottom: 45px;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.discover-section .heading a {
+  margin-bottom: 10px;
+}
+
+.discover-section .discover-card {
+  position: relative;
+  margin-bottom: 21px;
+  overflow: hidden;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 50px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 97 113 / var(--tw-bg-opacity));
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 640px) {
+  .discover-section .discover-card {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-section .discover-card {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.discover-section .shape-wrapper {
+  pointer-events: none;
+  position: absolute;
+}
+
+.discover-section .shape-wrapper img {
+  width: 100%;
+}
+
+.discover-section .shape-wrapper.top {
+  top: 0px;
+  right: 0px;
+  max-width: 326px;
+}
+
+@media (min-width: 640px) {
+  .discover-section .shape-wrapper.top {
+    max-width: 527px;
+  }
+}
+
+.discover-section .shape-wrapper.left {
+  bottom: 0px;
+  left: 0px;
+  max-width: 124px;
+}
+
+@media (min-width: 640px) {
+  .discover-section .shape-wrapper.left {
+    bottom: auto;
+    top: 134px;
+    max-width: 175px;
+  }
+}
+
+.discover-section .discover-card .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 32px;
+  padding-bottom: 59px;
+  padding-top: 42px;
+}
+
+@media (min-width: 1024px) {
+  .discover-section .discover-card .card-wrapper {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 3.8vw;
+    padding-top: 3.9vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .discover-section .discover-card .card-wrapper {
+    padding-left: 4.7vw;
+    padding-right: 4.7vw;
+  }
+}
+
+.discover-section .discover-card h4 {
+  margin-bottom: 9px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  --tw-text-opacity: 1;
+  color: rgb(45 56 48 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .discover-section .discover-card h4 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 39.2px;
+  }
+}
+
+.discover-section .discover-card h4 {
+  letter-spacing: 0px;
+}
+
+.discover-section .discover-card h3 {
+  margin-bottom: 19px;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 40px;
+  --tw-text-opacity: 1;
+  color: rgb(224 224 214 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .discover-section .discover-card h3 {
+    margin-bottom: 84px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .discover-section .discover-card h3 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+
+.discover-section .discover-card h3 {
+  letter-spacing: 0px;
+}
+
+.discover-section .discover-card p {
+  margin-bottom: 38px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  --tw-text-opacity: 1;
+  color: rgb(224 224 214 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .discover-section .discover-card p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-section .discover-card p {
+    margin-bottom: 52px;
+  }
+}
+
+.discover-section .image-wrapper {
+  max-width: 622px;
+}
+
+@media (min-width: 1536px) {
+  .discover-section .image-wrapper {
+    margin-right: 3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-section .left-section {
+    min-width: 380px;
+    max-width: 527px;
+  }
+}
+
+.discover-section .card-section h4 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(45 56 48 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .discover-section .card-section h4 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-section .card-section h4 {
+    font-size: 28px;
+    line-height: 39.2px;
+  }
+}
+
+.discover-section .card-section h4 {
+  letter-spacing: 0px;
+}
+
+.discover-section .card-section p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(45 56 48 / var(--tw-text-opacity));
+}
+
+.discover-section .card-section .image-card {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding-top: 73%;
+}
+
+@media (min-width: 640px) {
+  .discover-section .card-section .image-card {
+    padding-top: 75%;
+  }
+}
+
+.discover-section .card-section img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discover-section .keen-slider {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 640px) {
+  .discover-section .keen-slider {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.discover-section .keen-slider {
   overflow: visible !important;
 }

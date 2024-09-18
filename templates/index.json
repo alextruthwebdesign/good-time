@@ -304,6 +304,75 @@
         "heading": "Find your favorites"
       }
     },
+    "discover_section_8KmXnD": {
+      "type": "discover-section",
+      "blocks": {
+        "card_Ly9Tkn": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/couldnt_stand_the_weather_vinyl_store_1200x_1_1.png",
+            "subtitle": "Featured",
+            "title": "Livestock fraternity",
+            "description": "Stevie ray vaughan and double touble",
+            "button-text": "Shop Now",
+            "button-link": ""
+          }
+        },
+        "slide_46ryGC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image.png",
+            "title": "Eternity",
+            "subtitle": "Alice Coltrane"
+          }
+        },
+        "slide_fyp7f9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_1.png",
+            "title": "The Houston Kid",
+            "subtitle": "Rodney Crowell"
+          }
+        },
+        "slide_ymDNjp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2.png",
+            "title": "Here’s Little Richard",
+            "subtitle": "Little Richard"
+          }
+        },
+        "slide_MdKTar": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_20.png",
+            "title": "My Love is Your Love",
+            "subtitle": "Whitney Houston"
+          }
+        },
+        "slide_iA3VGk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image.png",
+            "title": "Eternity",
+            "subtitle": "Alice Coltrane"
+          }
+        }
+      },
+      "block_order": [
+        "card_Ly9Tkn",
+        "slide_46ryGC",
+        "slide_fyp7f9",
+        "slide_ymDNjp",
+        "slide_MdKTar",
+        "slide_iA3VGk"
+      ],
+      "settings": {
+        "heading": "Staff picks",
+        "button-text": "Discover more",
+        "button-link": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -350,6 +419,7 @@
     "text_banner_BJ6w6j",
     "subscription_plans_LJtPQG",
     "sliders_section_VUhyQM",
+    "discover_section_8KmXnD",
     "image_banner"
   ]
 }
