@@ -379,14 +379,27 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "What’s New?",
+            "heading_size": "hxxl"
+          }
+        },
+        "subtitle_XfEHeG": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Good Time Reissues Vault Records"
+          }
+        },
+        "text_PRUqPK": {
+          "type": "text",
+          "settings": {
+            "text": "Orci lobortis integer pulvinar pellentesque tristique. Ultricies eu phasellus ornare ut velit ipsum at purus. Velit id ullamcorper ut arcu placerat vitae id ipsum. Et integer ut posuere arcu mauris nisl.",
+            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "learn more",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -397,17 +410,20 @@
       },
       "block_order": [
         "heading",
+        "subtitle_XfEHeG",
+        "text_PRUqPK",
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/Rectangle_14_3_1.png",
+        "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-b3cd237a-726d-41fb-a563-9d97046f4341",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
