@@ -1,0 +1,165 @@
+<script src="{{ 'sliders-section.js' | asset_url }}" defer="defer"></script>
+
+
+<div class="sliders-section">
+    <div class="header-content">
+        {% if section.settings.heading != blank %}
+            <h2>{{ section.settings.heading }}</h2>
+        {% endif %}
+        <div class="tags text-top-slide">
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+            
+                    {%- when 'text_top_slide' -%}
+                    <a class="arrow-btn red-variant {% if forloop.index == 1 %} active {% endif %}" href="{{ block.settings.button-link }}">{{ block.settings.button-title }}</a>
+                {% endcase %}
+            {% endfor %}
+        </div>
+        <div class="tags-wrapper">
+          <div class="tags text-bottom-slide">
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+            
+                    {%- when 'text_bottom_slide' -%}
+                    <a class="arrow-btn red-variant {% if forloop.index == 1 %} active {% endif %}" href="{{ block.settings.button-link }}">{{ block.settings.button-title }}</a>
+                {% endcase %}
+            {% endfor %}
+            </div>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="top-image-slider keen-slider">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+        
+                {%- when 'image_top_slide' -%}
+                  <div class="keen-slider__slide">
+                    <div class="image-wrapper">
+                      {% if block.settings.image != blank %}
+                        <img
+                        src="{{ block.settings.image | image_url: width: block.settings.image.width }}"
+                        width="{{ block.settings.image.width }}"
+                        height="{{ block.settings.image.height }}"
+                        loading="lazy"
+                      >
+                      {% endif %}
+                    </div>
+                  </div>
+            {% endcase %}
+        {% endfor %}
+        </div>
+        </div>
+        <div class="slider-container">
+        <div class="bottom-image-slider keen-slider">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+        
+                {%- when 'image_bottom_slide' -%}
+                  <div class="keen-slider__slide">
+                    <div class="image-wrapper">
+                      {% if block.settings.image != blank %}
+                        <img
+                        src="{{ block.settings.image | image_url: width: block.settings.image.width }}"
+                        width="{{ block.settings.image.width }}"
+                        height="{{ block.settings.image.height }}"
+                        loading="lazy"
+                      >
+                      {% endif %}
+                    </div>
+                  </div>
+            {% endcase %}
+        {% endfor %}
+        </div>
+        </div>
+  
+</div>
+
+
+{% schema %}
+    {
+      "name": "Sliders Section",
+      "tag": "section",
+      "class": "section",
+      "disabled_on": {
+        "groups": ["header", "footer"]
+      },
+      "settings": [
+        {
+                "type": "text",
+                "id":"heading",
+                "label":"Heading"
+             
+            }
+      ],
+      "blocks": [
+        {
+          "type": "text_top_slide",
+          "name": "Text Top Slide",
+          "settings": [
+            {
+              "type": "text",
+              "id": "button-title",
+              "label": "Button Title"
+            },
+            {
+              "type": "url",
+              "id": "button-link",
+              "label": "Button Link"
+            }
+            
+          ]
+        },
+        {
+          "type": "text_bottom_slide",
+          "name": "Text Bottom Slide",
+          "settings": [
+            {
+              "type": "text",
+              "id": "button-title",
+              "label": "Button Title"
+            },
+            {
+              "type": "url",
+              "id": "button-link",
+              "label": "Button Link"
+            }
+            
+          ]
+        },
+        {
+          "type": "image_top_slide",
+          "name": "Image Top Slide",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            }
+            
+            
+          ]
+        },
+        {
+          "type": "image_bottom_slide",
+          "name": "Image Bottom Slide",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            }
+            
+            
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Sliders Section",
+          "blocks": [
+           
+          ]
+        }
+      ]
+    }
+    {% endschema %}

@@ -361,3 +361,49 @@ body {
 .subscription-plans .content-wrapper {
   @apply relative z-[1];
 }
+
+/* Sliders Section */
+.sliders-section {
+  @apply pt-[75px] lg:pt-[120px] xl:pt-[150px] overflow-hidden;
+}
+.sliders-section h2 {
+  @apply mb-[25px] text-[48px] sm:text-[54px] lg:text-[70px] xl:text-[96px] leading-[43.2px] sm:leading-[54px] lg:leading-[70px] xl:leading-[96px] text-[#2D3830] font-[800];
+}
+
+.sliders-section .tags {
+  @apply overflow-hidden flex gap-x-[8px];
+  touch-action: none;
+  user-select: none;
+}
+
+.sliders-section .arrow-btn {
+  @apply border-[1px] border-[#C62903] rounded-full px-[32px] pt-[16px] pb-[10px] inline-block;
+}
+
+.sliders-section .header-content {
+  @apply px-[10px] max-w-[1658px] mx-auto mb-[30px] lg:mb-[69px];
+}
+.sliders-section .text-top-slide {
+  @apply mb-[8px];
+}
+
+.sliders-section .tags-wrapper {
+  @apply flex justify-end;
+}
+
+.sliders-section .tags .arrow-btn {
+  @apply whitespace-nowrap pointer-events-none;
+}
+.sliders-section .image-wrapper {
+  @apply pt-[83%] relative;
+}
+.sliders-section .image-wrapper img {
+  @apply top-0 left-0 absolute w-full h-full object-cover;
+}
+.sliders-section .slider-container {
+  @apply max-w-[1920px] mx-auto;
+}
+.sliders-section .slider-container .keen-slider {
+  @apply ml-[-60px];
+  overflow: visible !important;
+}

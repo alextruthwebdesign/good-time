@@ -1719,3 +1719,130 @@ body {
   position: relative;
   z-index: 1;
 }
+
+/* Sliders Section */
+
+.sliders-section {
+  overflow: hidden;
+  padding-top: 75px;
+}
+
+@media (min-width: 1024px) {
+  .sliders-section {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sliders-section {
+    padding-top: 150px;
+  }
+}
+
+.sliders-section h2 {
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 43.2px;
+  --tw-text-opacity: 1;
+  color: rgb(45 56 48 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sliders-section h2 {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sliders-section h2 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sliders-section h2 {
+    font-size: 96px;
+    line-height: 96px;
+  }
+}
+
+.sliders-section .tags {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.sliders-section .arrow-btn {
+  display: inline-block;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(198 41 3 / var(--tw-border-opacity));
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+.sliders-section .header-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 1658px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 1024px) {
+  .sliders-section .header-content {
+    margin-bottom: 69px;
+  }
+}
+
+.sliders-section .text-top-slide {
+  margin-bottom: 8px;
+}
+
+.sliders-section .tags-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sliders-section .tags .arrow-btn {
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.sliders-section .image-wrapper {
+  position: relative;
+  padding-top: 83%;
+}
+
+.sliders-section .image-wrapper img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sliders-section .slider-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1920px;
+}
+
+.sliders-section .slider-container .keen-slider {
+  margin-left: -60px;
+  overflow: visible !important;
+}

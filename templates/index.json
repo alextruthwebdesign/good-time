@@ -136,6 +136,174 @@
       "settings": {
       }
     },
+    "sliders_section_VUhyQM": {
+      "type": "sliders-section",
+      "blocks": {
+        "text_top_slide_LRVTJK": {
+          "type": "text_top_slide",
+          "settings": {
+            "button-title": "soul",
+            "button-link": ""
+          }
+        },
+        "text_top_slide_EekqTE": {
+          "type": "text_top_slide",
+          "settings": {
+            "button-title": "rock & roll",
+            "button-link": ""
+          }
+        },
+        "text_top_slide_VB8PEA": {
+          "type": "text_top_slide",
+          "settings": {
+            "button-title": "dance & electronic",
+            "button-link": ""
+          }
+        },
+        "text_top_slide_HCcRgU": {
+          "type": "text_top_slide",
+          "settings": {
+            "button-title": "hip hop",
+            "button-link": ""
+          }
+        },
+        "text_top_slide_UcaLbd": {
+          "type": "text_top_slide",
+          "settings": {
+            "button-title": "R&B",
+            "button-link": ""
+          }
+        },
+        "text_bottom_slide_dm7TiG": {
+          "type": "text_bottom_slide",
+          "settings": {
+            "button-title": "Jazz",
+            "button-link": ""
+          }
+        },
+        "text_bottom_slide_adiGnH": {
+          "type": "text_bottom_slide",
+          "settings": {
+            "button-title": "country",
+            "button-link": ""
+          }
+        },
+        "text_bottom_slide_4w7taW": {
+          "type": "text_bottom_slide",
+          "settings": {
+            "button-title": "blues",
+            "button-link": ""
+          }
+        },
+        "text_bottom_slide_VRhFY7": {
+          "type": "text_bottom_slide",
+          "settings": {
+            "button-title": "pop",
+            "button-link": ""
+          }
+        },
+        "text_bottom_slide_aRBkkU": {
+          "type": "text_bottom_slide",
+          "settings": {
+            "button-title": "new age",
+            "button-link": ""
+          }
+        },
+        "text_bottom_slide_TaCEhD": {
+          "type": "text_bottom_slide",
+          "settings": {
+            "button-title": "classic",
+            "button-link": ""
+          }
+        },
+        "image_top_slide_U3UFWe": {
+          "type": "image_top_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gnidrolog-lady-lake-vinyl-900x900w_1_1.png"
+          }
+        },
+        "image_top_slide_DjmxmR": {
+          "type": "image_top_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cher-living-proof-vinyl-900x900w_1.png"
+          }
+        },
+        "image_top_slide_UzeLQ9": {
+          "type": "image_top_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patricia-kaas-je-te-dis-vous-vinyl-900x900_1.png"
+          }
+        },
+        "image_top_slide_cQHqGW": {
+          "type": "image_top_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/justin-timberlake-justified-vinyl-1-900x900w_1.png"
+          }
+        },
+        "image_top_slide_afKRiC": {
+          "type": "image_top_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/imogen-heap-the-music-of-harry-potter-and-the-cursed-child-parts-one-and-two-vinyl-900x900w_1_1.png"
+          }
+        },
+        "image_bottom_slide_JQeaWJ": {
+          "type": "image_bottom_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rod-stewart-with-jools-holland-swing-fever-vinyl-900x900w_1_1.png"
+          }
+        },
+        "image_bottom_slide_h9htWw": {
+          "type": "image_bottom_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/outkast-speakerboxxx-the-love-below-vinyl-900x900_2.png"
+          }
+        },
+        "image_bottom_slide_cQidCY": {
+          "type": "image_bottom_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/avril-lavigne-the-best-damn-thing-vinyl-1-900x900w_1.png"
+          }
+        },
+        "image_bottom_slide_fUGK4m": {
+          "type": "image_bottom_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/manowar-fighting-the-world-vinyl-1-900x900_1.png"
+          }
+        },
+        "image_bottom_slide_4gehn8": {
+          "type": "image_bottom_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jeff-wayne-jeff-wayne-s-musical-version-of-the-war-of-the-worlds-vinyl-1-900x900w_1_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_top_slide_LRVTJK",
+        "text_top_slide_EekqTE",
+        "text_top_slide_VB8PEA",
+        "text_top_slide_HCcRgU",
+        "text_top_slide_UcaLbd",
+        "text_bottom_slide_dm7TiG",
+        "text_bottom_slide_adiGnH",
+        "text_bottom_slide_4w7taW",
+        "text_bottom_slide_VRhFY7",
+        "text_bottom_slide_aRBkkU",
+        "text_bottom_slide_TaCEhD",
+        "image_top_slide_U3UFWe",
+        "image_top_slide_DjmxmR",
+        "image_top_slide_UzeLQ9",
+        "image_top_slide_cQHqGW",
+        "image_top_slide_afKRiC",
+        "image_bottom_slide_JQeaWJ",
+        "image_bottom_slide_h9htWw",
+        "image_bottom_slide_cQidCY",
+        "image_bottom_slide_fUGK4m",
+        "image_bottom_slide_4gehn8"
+      ],
+      "settings": {
+        "heading": "Find your favorites"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -181,6 +349,7 @@
     "products_slider_BkV3t8",
     "text_banner_BJ6w6j",
     "subscription_plans_LJtPQG",
+    "sliders_section_VUhyQM",
     "image_banner"
   ]
 }
