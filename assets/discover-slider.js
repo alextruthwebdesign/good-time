@@ -1,5 +1,5 @@
 const discoverSliders = document?.querySelectorAll(".discover-section");
-console.log(discoverSliders);
+
 discoverSliders?.forEach((item) => {
   const sliderEl = item?.querySelector(".keen-slider");
 

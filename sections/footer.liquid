@@ -11,8 +11,8 @@
   }
 
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.9 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.9 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -147,7 +147,18 @@
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
                       <div class="menu-wrapper">
-                      <p> {{ block.settings.heading }} </p>
+                      <div class="menu-header">
+                        <p> {{ block.settings.heading }} </p>
+                      <svg class="plus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 5V19M5 12H19" stroke="#E0E0D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg class="minus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12H19" stroke="#E0E0D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+
+                      </div>
+                      
                       <ul class="footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
@@ -342,6 +353,25 @@
     </div>
   </div>
 </footer>
+
+
+<script>
+
+  const footerMenusHeader = document?.querySelectorAll('.footer .menu-wrapper .menu-header')
+ 
+  footerMenusHeader?.forEach(item=>{
+    item?.addEventListener('click',function(e){
+     const parentContainer = item?.parentElement;
+    
+     if(parentContainer?.classList?.contains('active')){
+      parentContainer?.classList?.remove('active')
+     }else{
+      parentContainer?.classList?.add('active')
+     }
+     
+    })
+  })
+</script>
 
 {% schema %}
 {
