@@ -554,3 +554,95 @@ body {
     content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 17L17 7M17 7H7M17 7V17' stroke='%23E0E0D6' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   }
 }
+
+/* Footer */
+.footer {
+  @apply px-[10px];
+}
+.footer .footer-container {
+  @apply flex flex-col gap-y-[30px] lg:flex-row items-center lg:items-start justify-between gap-x-[20px];
+}
+.footer .footer-container .left-section {
+  @apply w-full max-w-[527px];
+}
+.footer .footer-container .right-section {
+  @apply flex  w-full justify-center lg:justify-end xl:pr-[6.5vh];
+}
+.footer .footer-container .menus-container {
+  @apply flex flex-col sm:flex-row justify-between w-full gap-x-[20px] sm:max-w-[500px] lg:max-w-[589px];
+}
+.footer .footer-container .logo-wrapper {
+  @apply max-w-[177px] sm:max-w-[248px] mb-[28px] sm:mb-[34px];
+}
+.footer .footer-container .title {
+  @apply text-[40px] xl:text-[64px] leading-[40px] xl:leading-[64px] font-[800] uppercase m-0 mb-[5px] sm:mb-[19px];
+  letter-spacing: 0px;
+}
+.footer .footer-container .footer-block__heading {
+  @apply text-[16px] sm:text-[20px] leading-[25.6px] sm:leading-[32px] font-[600] text-left;
+  font-family: var(--font-body-family);
+  letter-spacing: 0px;
+}
+.footer .footer-container input {
+  @apply text-[14px] sm:text-[16px] leading-[22.4px] sm:leading-[25.6px] font-[600] min-h-[64px] pr-[208px];
+  box-shadow: none;
+}
+
+.footer .field__label {
+  @apply text-[14px] sm:text-[16px] leading-[22.4px] sm:leading-[25.6px] font-[600] text-[#E0E0D6] top-[22px] sm:top-[20px];
+  letter-spacing: 0px;
+}
+@media (max-width: 640px) {
+  .footer .field__label {
+    @apply left-[10px];
+  }
+}
+.footer .footer-container .field::after {
+  box-shadow: 0 0 0 var(--inputs-border-width)
+    rgba(var(--color-foreground), var(--inputs-border-opacity));
+}
+.footer .footer-container .newsletter-form__button {
+  @apply text-[20px] right-[20px] lg:text-[32px] leading-[20px] lg:leading-[32px] font-[800] w-auto text-[#E0E0D6] uppercase;
+  letter-spacing: 0px;
+  font-family: var(--font-heading-family);
+}
+
+.footer .footer-container .newsletter-form__button::after {
+  @apply ml-[8px];
+  vertical-align: middle;
+  content: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 25.5L25.5 10.5M25.5 10.5H10.5M25.5 10.5V25.5' stroke='%23E0E0D6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.footer .footer-container .newsletter-form {
+  @apply max-w-[100%] w-full;
+}
+.footer .footer-container .newsletter-form__field-wrapper {
+  @apply max-w-[100%];
+}
+
+.footer .footer__content-top {
+  @apply max-w-[1635px] p-0;
+}
+.footer .menu-wrapper p {
+  @apply text-[20px] leading-[20px] font-[800] text-[#E0E0D6] uppercase mb-[19px];
+  font-family: var(--font-heading-family);
+  letter-spacing: 0px;
+}
+.footer .menu-wrapper li a {
+  @apply text-[16px] leading-[21px] font-[600] text-[#E0E0D6] inline-block;
+  letter-spacing: 0px;
+}
+.footer .footer__content-bottom {
+  @apply border-0;
+}
+
+.footer .copyright__content {
+  @apply text-[16px] leading-[24px] font-[400] text-[#E0E0D6];
+  letter-spacing: 0px;
+}
+.footer .footer__content-bottom-wrapper--center {
+  @apply lg:justify-end max-w-[1637px] px-0;
+}
+
+.footer .footer__content-bottom {
+  @apply pt-0;
+}
