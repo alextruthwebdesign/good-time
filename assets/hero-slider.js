@@ -3,7 +3,7 @@ heroSliders?.forEach((item) => {
   const sliderEl = item?.querySelector(".keen-slider");
   const prevBtn = item?.querySelector(".slider-btns .prev");
   const nextBtn = item?.querySelector(".slider-btns .next");
-  const slider = new KeenSlider(sliderEl, {}, [
+  const slider = new KeenSlider(sliderEl, { loop: true }, [
     (slider) => {
       let timeout;
       let mouseOver = false;

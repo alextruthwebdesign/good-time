@@ -2736,3 +2736,112 @@ body {
     cursor: pointer;
   }
 }
+
+/* Product */
+
+.product-container {
+  max-width: 1910px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-container .product {
+  display: flex;
+}
+
+.product-container .product-media-container {
+  border-width: 0px;
+}
+
+.product-container .thumbnail,
+.product-container .thumbnail[aria-current] {
+  border-width: 0px;
+  box-shadow: none;
+}
+
+.product-container .thumbnail[aria-current]:focus:not(:focus-visible) {
+  border-width: 0px;
+  box-shadow: none;
+}
+
+.product-container
+  .thumbnail-list.slider--tablet-up
+  .thumbnail-list__item.slider__slide {
+  width: 24%;
+}
+
+.product-container .slider-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 56 48 / var(--tw-bg-opacity));
+}
+
+.product-container .product.product--medium .product__media-wrapper {
+  max-width: 52%;
+  width: 52%;
+}
+
+.product-container .product.product--medium .product__info-wrapper {
+  max-width: 48%;
+  width: 48%;
+}
+
+.slider-mobile-gutter .dots {
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  gap: 10px;
+}
+
+.slider-mobile-gutter .dots .dot {
+  display: block;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 224 214 / var(--tw-bg-opacity));
+}
+
+.slider-mobile-gutter .dots .dot.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(198 41 3 / var(--tw-bg-opacity));
+}
+
+.product-container .product--thumbnail_slider .thumbnail-slider {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 946px;
+}
+
+.product-container .slider-mobile-gutter .product__media-item {
+  width: 100%;
+}
+
+.product-container .slider-mobile-gutter .slider-button {
+  height: 54px;
+  width: 54px;
+}
+
+.product-container .slider-mobile-gutter .slider-button.slider-button--prev {
+  z-index: 1;
+  --tw-translate-x: 33px;
+  --tw-translate-y: 6px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.product-container .slider-mobile-gutter .slider-button.slider-button--next {
+  z-index: 1;
+  --tw-translate-x: -33px;
+  --tw-translate-y: 6px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (max-width: 750px) {
+  .product-container .slider-mobile-gutter .product__media-list {
+    display: flex;
+  }
+}
