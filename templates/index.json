@@ -370,7 +370,9 @@
       "settings": {
         "heading": "Staff picks",
         "button-text": "Discover more",
-        "button-link": ""
+        "button-link": "",
+        "padding_top": 0,
+        "padding_bottom": 152
       }
     },
     "image_banner": {

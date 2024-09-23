@@ -57,7 +57,7 @@
       ],
       "settings": {
         "enable_sticky_info": false,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-b3cd237a-726d-41fb-a563-9d97046f4341",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -67,12 +67,13 @@
         "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 0,
+        "padding_bottom": 150
       }
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -88,10 +89,104 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "subscription_plans_UVC9d8": {
+      "type": "subscription-plans",
+      "blocks": {
+        "card_tGLMRQ": {
+          "type": "card",
+          "settings": {
+            "background-color": "#486171",
+            "content": "<h2>Vintage<br\/> Record<br\/>Club - VINYL<\/h2><p>Starting at $30 \/ Month<\/p>",
+            "image": "shopify:\/\/shop_images\/Vinyl-4_1_1.png",
+            "shape": "shopify:\/\/shop_images\/distress_top_1.png",
+            "button-title": "become a member",
+            "button-link": ""
+          }
+        },
+        "card_k8aK6B": {
+          "type": "card",
+          "settings": {
+            "background-color": "#c62903",
+            "content": "<h2>Vintage<br\/> Record<br\/> Club - CD<\/h2><p>Starting at $10 \/ Month<\/p>",
+            "image": "shopify:\/\/shop_images\/Vinyl-4_4.png",
+            "shape": "shopify:\/\/shop_images\/distress_top_2.png",
+            "button-title": "become a member",
+            "button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_tGLMRQ",
+        "card_k8aK6B"
+      ],
+      "settings": {
+      }
+    },
+    "discover_section_CQFKtw": {
+      "type": "discover-section",
+      "blocks": {
+        "slide_Pg6aip": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_7.png",
+            "title": "Only 1 Night",
+            "subtitle": "Herman and the hermits"
+          }
+        },
+        "slide_hwczKd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_8.png",
+            "title": "Weighing In",
+            "subtitle": "Al Wilson"
+          }
+        },
+        "slide_VdEkGg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JLS-3008-R_JohnnyWinter_Packshot_V2.png",
+            "title": "About Blues",
+            "subtitle": "Johnny Winter"
+          }
+        },
+        "slide_9d7QJA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_21.png",
+            "title": "In My Young Days",
+            "subtitle": "Junior Wells"
+          }
+        },
+        "slide_fdcV3J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_9.png",
+            "title": "Surfbeat",
+            "subtitle": "the challengers"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Pg6aip",
+        "slide_hwczKd",
+        "slide_VdEkGg",
+        "slide_9d7QJA",
+        "slide_fdcV3J"
+      ],
+      "settings": {
+        "heading": "You may also like",
+        "button-text": "",
+        "button-link": "",
+        "padding_top": 150,
+        "padding_bottom": 154
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "subscription_plans_UVC9d8",
+    "discover_section_CQFKtw"
   ]
 }

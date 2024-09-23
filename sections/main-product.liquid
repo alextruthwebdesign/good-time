@@ -105,6 +105,10 @@
                     </h2>
                   </a>
                 </div>
+               
+                {% if product.metafields.custom.author != blank %}
+                  <p class="author">{{ product.metafields.custom.author }}</p>
+                {% endif %}
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -456,10 +460,17 @@
                   </button>
                 </modal-opener>
               {%- when 'share' -%}
-                {% liquid
+                <div class="share-section">
+                  {% liquid
                   assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
                   render 'share-button', block: block, share_link: share_url
                 %}
+                <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z" stroke="#C62903" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                </div>
+                
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
@@ -471,6 +482,12 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+             
+            
+                {% if product.metafields.custom.product_description != blank %}
+                  
+                  <div class="product-description"> {{ product.metafields.custom.product_description | metafield_tag }} </div>
+                {% endif %}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -2235,8 +2252,8 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 150,
+      "step": 2,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
       "default": 36
@@ -2245,8 +2262,8 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 150,
+      "step": 2,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36

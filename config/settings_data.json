@@ -112,7 +112,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "currency_code_enabled": true,
+    "currency_code_enabled": false,
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
@@ -206,7 +206,7 @@
         "settings": {
           "background": "#e0e0d6",
           "background_gradient": "",
-          "text": "#e0e0d6",
+          "text": "#2d3830",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",

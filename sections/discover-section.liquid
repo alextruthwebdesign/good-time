@@ -1,6 +1,28 @@
 <script src="{{ 'discover-slider.js' | asset_url }}" defer="defer"></script>
 
-<div class="discover-section">
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 1 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 1 | round: 0 }}px;
+  }
+
+  @media screen and (max-width: 1235px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.7 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.7 | round: 0 }}px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.45 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.45 | round: 0 }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="discover-section section-{{ section.id }}-padding">
     <div class="discover-wrapper">
         <div class="heading">
             {% if section.settings.heading != blank %}
@@ -119,7 +141,27 @@
               "type": "url",
               "id": "button-link",
               "label": "Button Link"
-            }
+            },
+            {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    }
       ],
       "blocks": [
         {
