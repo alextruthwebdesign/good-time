@@ -33,6 +33,10 @@ body {
 .main-btn {
   @apply min-h-[80px] xl:min-h-[100px] bg-[#C62903] font-[800] text-[#E0E0D6] text-[16px] md:text-[20px] leading-[16px] md:leading-[20px] uppercase rounded-tl-[25px] rounded-br-[25px] flex items-center justify-center text-center max-w-[165px] w-full px-[20px];
   font-family: var(--font-heading-family);
+  transition: background 0.3s ease-in-out;
+}
+.main-btn:hover {
+  @apply bg-[#486171];
 }
 
 .header-wrapper .main-btn {
@@ -96,9 +100,13 @@ body {
 }
 
 .arrow-btn::after {
-  @apply ml-[8px];
+  @apply ml-[8px] inline-block;
   vertical-align: middle;
+  transition: transform 0.3s ease-in-out;
   content: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 25.5L25.5 10.5M25.5 10.5H10.5M25.5 10.5V25.5' stroke='%23E0E0D6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.arrow-btn:hover::after {
+  @apply rotate-[45deg];
 }
 
 .arrow-btn.red-variant::after {
@@ -267,6 +275,10 @@ body {
 }
 .products-slider .products-slider-wrapper button {
   @apply bg-[#C62903] opacity-100 rounded-full min-h-[43px] w-auto px-[25px];
+  transition: background 0.3s ease-in-out;
+}
+.products-slider .products-slider-wrapper button:hover {
+  @apply bg-[#486171];
 }
 .products-slider .products-slider-wrapper .content {
   @apply px-[8px] sm:px-[17px];
@@ -535,8 +547,12 @@ body {
 .image-banner-section .button.button--secondary::after {
   @apply ml-[8px] relative;
   box-shadow: none;
+  transition: transform 0.3s ease-in-out;
   vertical-align: middle;
   content: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 25.5L25.5 10.5M25.5 10.5H10.5M25.5 10.5V25.5' stroke='%23E0E0D6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.image-banner-section .button.button--secondary:hover::after {
+  @apply rotate-[45deg];
 }
 .image-banner-section .banner__box > * + .banner__buttons {
   @apply mt-[25px] sm:mt-[50px];
@@ -795,6 +811,10 @@ body {
 .product-container .button {
   @apply bg-[#C62903] min-h-[64px] rounded-full text-[20px] lg:text-[24px] leading-[20px] lg:leading-[24px] font-[800] uppercase;
   letter-spacing: 0px;
+  transition: background 0.3s ease-in-out;
+}
+.product-container .button:hover {
+  @apply bg-[#486171];
 }
 .product-container .button::before,
 .product-container .button::after {
