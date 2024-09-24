@@ -840,8 +840,116 @@ body {
   letter-spacing: 0px;
 }
 .product-container .product__info-container .product-form {
-  @apply mb-[20px] sm:mb-[39px];
+  @apply mb-[20px] sm:mb-[39px] mt-[18px];
 }
+
+.product-container .product-subscription .subscription-banner {
+  @apply bg-[#486171] flex items-center rounded-tl-[25px] rounded-br-[25px] gap-x-[21px] mb-[32px];
+}
+
+.product-container .product-subscription h3 {
+  @apply text-[24px] lg:text-[28px] leading-[24px] lg:leading-[28px] font-[800] text-[#E0E0D6];
+  letter-spacing: 0px;
+}
+.product-container .product-subscription p {
+  @apply text-[16px] leading-[22.4px] text-[#E0E0D6];
+  letter-spacing: 0px;
+}
+.product-container .product-subscription .logo-wrapper {
+  @apply w-full max-w-[139px];
+}
+.product-container .price-container {
+  @apply mb-[22px];
+}
+
+.product-container .custom-radio {
+  @apply w-[24px] h-[24px] bg-[#FFFFFF] rounded-full relative overflow-hidden;
+}
+.product-container .custom-radio input {
+  @apply w-full h-full top-0 left-0 absolute opacity-0;
+}
+
+.product-container .custom-radio .checkmark {
+  @apply hidden absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[12px] h-[12px] bg-[#2D3830] block rounded-full;
+}
+.product-container .custom-radio input:checked ~ .checkmark {
+  @apply block;
+}
+.product-container .subscription-item .input-container {
+  @apply flex flex-wrap gap-x-[11px];
+}
+.product-container .subscription-item h4 {
+  @apply text-[16px] sm:text-[20px] leading-[19.2px] sm:leading-[24px] font-[500];
+  font-family: var(--font-body-family);
+}
+.product-container .subscription-item h4,
+.product-container .subscription-item p {
+  letter-spacing: 0px;
+}
+.product-container .subscription-item .price {
+  @apply text-[20px] lg:text-[24px] leading-[20px] relative lg:leading-[24px] font-[800] text-[#2D3830];
+  font-family: var(--font-heading-family);
+}
+.product-container .subscription-item .price.discount {
+  @apply text-[#C62903] ml-[10px];
+}
+.product-container .subscription-item .price.discounted::after {
+  @apply absolute border-[2px] border-[#C62903] w-full left-0 top-[50%];
+  content: "";
+}
+.product-container .subscription-item .subscription-description {
+  @apply text-[14px] sm:text-[16px] leading-[22.4px] sm:leading-[25.6px] text-[#2D3830] ml-[35px];
+}
+
+.product-container .subscription-item.first {
+  @apply border-b-[1px] border-[#B2B2AB] pb-[11px];
+}
+.product-container .subscription-item {
+  @apply mb-[20px];
+}
+.product-container .bundle-container h3 {
+  @apply text-[24px] lg:text-[28px] leading-[24px] lg:leading-[28px] font-[800] text-[#2D3830] mb-[8px];
+}
+.product-container .bundle-container .bundle-wrapper {
+  @apply flex items-center;
+}
+.product-container .bundle-container {
+  @apply mt-[54px];
+}
+.product-container .custom-checkbox {
+  @apply w-[34px] h-[34px] bg-white rounded-[4px] relative overflow-hidden mb-[26px];
+}
+.product-container .custom-checkbox input {
+  @apply absolute top-0 left-0 w-full h-full opacity-0;
+}
+.product-container .custom-checkbox .checkmark {
+  @apply absolute hidden top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[18px] h-[18px] block;
+  content: url("data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M15%204.5L6.75%2012.75L3%209%22%20stroke%3D%22%232D3830%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.product-container .custom-checkbox input:checked ~ .checkmark {
+  @apply block;
+}
+.product-container .bundle-container h4,
+.product-container .bundle-container p {
+  letter-spacing: 0px;
+}
+.product-container .bundle-container h4 {
+  @apply text-[20px] lg:text-[24px] leading-[20px] lg:leading-[24px] font-[800] max-w-[178px] mb-[10px];
+}
+.product-container .bundle-container p {
+  @apply inline text-[16px] lg:text-[20px] leading-[25px] lg:leading-[28px];
+}
+.product-container .bundle-container p.discounted {
+  @apply mr-[15px];
+  text-decoration: line-through;
+}
+.product-container .bundle-container .image-wrapper {
+  @apply w-full max-w-[280px];
+}
+.product-container .bundle-container .image-wrapper img {
+  @apply w-full mx-[-15px];
+}
+
 @media (max-width: 920px) {
   .product-container .product {
     @apply flex-col;

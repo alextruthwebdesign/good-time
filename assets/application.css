@@ -3102,12 +3102,304 @@ body {
 
 .product-container .product__info-container .product-form {
   margin-bottom: 20px;
+  margin-top: 18px;
 }
 
 @media (min-width: 640px) {
   .product-container .product__info-container .product-form {
     margin-bottom: 39px;
   }
+}
+
+.product-container .product-subscription .subscription-banner {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 21px;
+       column-gap: 21px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 97 113 / var(--tw-bg-opacity));
+}
+
+.product-container .product-subscription h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(224 224 214 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .product-container .product-subscription h3 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+.product-container .product-subscription h3 {
+  letter-spacing: 0px;
+}
+
+.product-container .product-subscription p {
+  font-size: 16px;
+  line-height: 22.4px;
+  --tw-text-opacity: 1;
+  color: rgb(224 224 214 / var(--tw-text-opacity));
+  letter-spacing: 0px;
+}
+
+.product-container .product-subscription .logo-wrapper {
+  width: 100%;
+  max-width: 139px;
+}
+
+.product-container .price-container {
+  margin-bottom: 22px;
+}
+
+.product-container .custom-radio {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  overflow: hidden;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.product-container .custom-radio input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.product-container .custom-radio .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  display: none;
+  height: 12px;
+  width: 12px;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 56 48 / var(--tw-bg-opacity));
+}
+
+.product-container .custom-radio input:checked ~ .checkmark {
+  display: block;
+}
+
+.product-container .subscription-item .input-container {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+}
+
+.product-container .subscription-item h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+}
+
+@media (min-width: 640px) {
+  .product-container .subscription-item h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.product-container .subscription-item h4 {
+  font-family: var(--font-body-family);
+}
+
+.product-container .subscription-item h4,
+.product-container .subscription-item p {
+  letter-spacing: 0px;
+}
+
+.product-container .subscription-item .price {
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(45 56 48 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .product-container .subscription-item .price {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.product-container .subscription-item .price {
+  font-family: var(--font-heading-family);
+}
+
+.product-container .subscription-item .price.discount {
+  margin-left: 10px;
+  --tw-text-opacity: 1;
+  color: rgb(198 41 3 / var(--tw-text-opacity));
+}
+
+.product-container .subscription-item .price.discounted::after {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 100%;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(198 41 3 / var(--tw-border-opacity));
+  content: "";
+}
+
+.product-container .subscription-item .subscription-description {
+  margin-left: 35px;
+  font-size: 14px;
+  line-height: 22.4px;
+  --tw-text-opacity: 1;
+  color: rgb(45 56 48 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .product-container .subscription-item .subscription-description {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+
+.product-container .subscription-item.first {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(178 178 171 / var(--tw-border-opacity));
+  padding-bottom: 11px;
+}
+
+.product-container .subscription-item {
+  margin-bottom: 20px;
+}
+
+.product-container .bundle-container h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(45 56 48 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .product-container .bundle-container h3 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+.product-container .bundle-container .bundle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.product-container .bundle-container {
+  margin-top: 54px;
+}
+
+.product-container .custom-checkbox {
+  position: relative;
+  margin-bottom: 26px;
+  height: 34px;
+  width: 34px;
+  overflow: hidden;
+  border-radius: 4px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.product-container .custom-checkbox input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.product-container .custom-checkbox .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  display: none;
+  height: 18px;
+  width: 18px;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  content: url("data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M15%204.5L6.75%2012.75L3%209%22%20stroke%3D%22%232D3830%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.product-container .custom-checkbox input:checked ~ .checkmark {
+  display: block;
+}
+
+.product-container .bundle-container h4,
+.product-container .bundle-container p {
+  letter-spacing: 0px;
+}
+
+.product-container .bundle-container h4 {
+  margin-bottom: 10px;
+  max-width: 178px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+@media (min-width: 1024px) {
+  .product-container .bundle-container h4 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.product-container .bundle-container p {
+  display: inline;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+@media (min-width: 1024px) {
+  .product-container .bundle-container p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.product-container .bundle-container p.discounted {
+  margin-right: 15px;
+  text-decoration: line-through;
+}
+
+.product-container .bundle-container .image-wrapper {
+  width: 100%;
+  max-width: 280px;
+}
+
+.product-container .bundle-container .image-wrapper img {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 100%;
 }
 
 @media (max-width: 920px) {

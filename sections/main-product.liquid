@@ -110,7 +110,7 @@
                   <p class="author">{{ product.metafields.custom.author }}</p>
                 {% endif %}
               {%- when 'price' -%}
-                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                <div id="price-{{ section.id }}" class="price-container" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
                     product: product,
                     use_variant: true,
@@ -475,6 +475,73 @@
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
+
+                <div class="product-subscription">
+                  <div class="subscription-banner">
+                    <div class="logo-wrapper">
+                            <img
+                            src="{{ 'subscription-logo.png' | asset_url }}"
+                            width="139"
+                            height="130"
+                            loading="lazy"
+                          >
+                        </div>
+                      <div class="content">
+                        <h3>Get a Discount on this Product When You Join the Club</h3>
+                        <p>+ Free Shipping sitewide</p>
+                      </div>
+                      </div>
+                    <div class="subscription-item first">
+                      <div class="input-container">
+                        <div class="custom-radio">
+                          <input type="radio"/>
+                          <div class="checkmark"></div>
+                        </div>
+                        <h4>Join the Club & Save</h4>
+                        <p class="price discounted">$29.99</p>
+                        <p class="price discount">$25.99</p>
+                      </div>
+                      <p class="subscription-description">+ Free shipping</p>
+                    </div>
+                    <div class="subscription-item">
+                      <div class="input-container">
+                        <div class="custom-radio">
+                          <input type="radio"/>
+                          <div class="checkmark"></div>
+                        </div>
+                        <h4>One-time purchase</h4>
+                        <p class="price">$29.99</p>
+             
+                      </div>
+                    
+                    </div>
+                    
+               
+                </div>
+
+                <div class="bundle-container">
+                  <h3>Bundle & Save</h3>
+                  <div class="bundle-wrapper">
+                    <div class="image-wrapper">
+                      <img
+                            src="{{ 'bundle.png' | asset_url }}"
+                            width="247"
+                            height="192"
+                            loading="lazy"
+                          >
+                    </div>
+                    <div class="bundle-details">
+                      <div class="custom-checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkmark"></div>
+                      </div>
+                      <h4>Dizzy Gillespie Live in Chester</h4>
+                      <p class="price discounted">$29.99</p>
+                      <p class="price">$24.99</p>
+                    </div>
+                  </div>
+                </div>
+
                 {%- render 'buy-buttons',
                   block: block,
                   product: product,
