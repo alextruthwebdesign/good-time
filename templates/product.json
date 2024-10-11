@@ -97,7 +97,7 @@
           "type": "card",
           "settings": {
             "background-color": "#486171",
-            "content": "<h2>Vintage<br\/> Record<br\/>Club - VINYL<\/h2><p>Starting at $30 \/ Month<\/p>",
+            "content": "<h4>Join Us<\/h4><h2>Vintage<br\/> Record<br\/>Club - VINYL<\/h2><p>Starting at $30 \/ Month<\/p>",
             "image": "shopify:\/\/shop_images\/Vinyl-4_1_1.png",
             "shape": "shopify:\/\/shop_images\/distress_top_1.png",
             "button-title": "become a member",
@@ -108,7 +108,7 @@
           "type": "card",
           "settings": {
             "background-color": "#c62903",
-            "content": "<h2>Vintage<br\/> Record<br\/> Club - CD<\/h2><p>Starting at $10 \/ Month<\/p>",
+            "content": "<h4>Join Us<\/h4><h2>Vintage<br\/> Record<br\/> Club - CD<\/h2><p>Starting at $10 \/ Month<\/p>",
             "image": "shopify:\/\/shop_images\/Vinyl-4_4.png",
             "shape": "shopify:\/\/shop_images\/distress_top_2.png",
             "button-title": "become a member",

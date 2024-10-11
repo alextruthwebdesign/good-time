@@ -555,6 +555,71 @@
                   
                   <div class="product-description"> {{ product.metafields.custom.product_description | metafield_tag }} </div>
                 {% endif %}
+
+
+                <div class="product-details">
+                  <div class="accordion-tabs">
+                    <button class="active">Details</button>
+                    <button>Playlist</button>
+                    <button>Sample</button>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="row">
+                      <div class="column">
+                        <p>Label</p>
+                        <h5>Lorem Ipsum</h5>
+                      </div>
+                      <div class="column">
+                        <p>Original Release Year</p>
+                        <h5>1998</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <div class="text-wrapper">
+                          <p>Release Type</p>
+                          <h5>Rerelease</h5>
+                        </div>
+                        <div class="text-wrapper">
+                          <p>Speed</p>
+                          <h5>33 1/3</h5>
+                        </div>
+                        <div class="text-wrapper">
+                          <p>Weight</p>
+                          <h5>Standard</h5>
+                        </div>
+                        <div class="text-wrapper">
+                          <p>Jacket</p>
+                          <h5>Direct-To-Board; Gatefold</h5>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="text-wrapper">
+                          <p>Format</p>
+                          <h5>1LP</h5>
+                        </div>
+                        <div class="text-wrapper">
+                          <p>Vinyl Size</p>
+                          <h5>12 inch</h5>
+                        </div>
+                        <div class="text-wrapper">
+                          <p>Color</p>
+                          <h5>Translucent Blue</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <p>Pressing Location</p>
+                        <h5>Lorem Record Pressing (LRP)</h5>
+                      </div>
+                      <div class="column">
+                        <p>Total Pressing Quantity</p>
+                        <h5>800</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -803,6 +868,19 @@
     </script>
   </div>
 </product-info>
+
+
+<script>
+  const accordionTabs= document?.querySelectorAll('.product-container .accordion-tabs button');
+  accordionTabs?.forEach(item=>{
+    item?.addEventListener('click',function(e){
+      accordionTabs?.forEach(el=>{
+        el?.classList?.remove('active')
+      })
+      e?.target?.classList?.add('active')
+    })
+  })
+</script>
 
 {% schema %}
 {
